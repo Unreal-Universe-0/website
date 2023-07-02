@@ -7,7 +7,5 @@ const server =http.createServer(req, res=>{
 	res.end(filecontent)
 
 })
-server.listen(8000,'54.86.7.193',()=>{
-	console.log("listening on port 80")
-})
+server.listen(8000);
 
