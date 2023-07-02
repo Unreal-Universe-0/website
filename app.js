@@ -8,4 +8,5 @@ const server =http.createServer( res=>{
 
 })
 server.listen(8000);
+console.log('connected');
 
