@@ -1,10 +1,7 @@
-const express = require("express");
-const app = express();
-
-app.listen(3000, () => {
-  console.log("Application started and Listening on port 3000");
-});
-
-app.get("/", (req, res) => {
-  res.sendFile(__dirname + "/index.html");
-});
+var http = require('http');
+var uc = require('upper-case');
+http.createServer(function (req, res) {
+  res.writeHead(200, {'Content-Type': 'text/html'});
+  res.write(uc.upperCase("Hello World!"));
+  res.end();
+}).listen(8000);
